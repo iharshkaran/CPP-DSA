@@ -16,7 +16,8 @@ int main(){
         int q;
         cin>>q;
         v.push_back(q);
-    } 
+    }
+    display(v);
     vector<int> v2(v.size());
     // for(int i=v2.size()-1; i>=0;i--){ // my Method
     //     cout<<v[i]<<" ";
