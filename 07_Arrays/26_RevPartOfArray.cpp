@@ -3,7 +3,7 @@
 #include<algorithm>
 using namespace std;
 void display(vector<int>& a){
-        for(int i=0;i<a.size();i++){
+        for(int i=0;i<=a.size()-1;i++){
             cout<<a[i]<<" ";
         }
         cout<<endl;
@@ -13,28 +13,24 @@ int main(){
     int n;
     cout<<"Enter array size : ";
     cin>>n;
+    cout<<"Enter Values : ";
     for(int i=0;i<n ; i++){
         int q;
         cin>>q;
         v.push_back(q);
     }
-    // int i = 0;
-    // int j = v.size()-1; 
-    // while(i<=j){
-    //     //swap v[i] and v[j]
-    //     int temp = v[i];
-    //     v[i] = v[j];
-    //     v[j]= temp;
-    //     i++;
-    //     j--;
-    // }
 
-    for(int i=0, j=v.size()-1; i<=j;i++,j--){  //Using For Loop
+    int start, end;
+    cout<<"Starting Index Value : ";
+    cin>>start;
+    cout<<"Ending Index Value : ";
+    cin>>end;
+
+    for(int i=start, j=end; i<=j;i++,j--){  //Using For Loop
         int temp = v[i];
         v[i] = v[j];
         v[j] = temp;  
     }
-    // reverse(v.begin(),v.end()); // Using Inbuild Function
 display(v);
 
 
