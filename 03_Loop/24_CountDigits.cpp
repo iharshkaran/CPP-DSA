@@ -11,19 +11,19 @@ int main(){
     //     }
     // }
     // cout<<a;
-    // ----------------> My Method 1 ....
-    // int count =1;
-    // while(n/=10){
-    //     count++;
-    // }
-    // cout<<count;
-    // ----------------> My method 2 .....
-    int count = 0;
-    int a = n;
-    while(n>0){
-        n/=10;
+    // ----------------> My Method 1 .....
+    int count =1;
+    while(n/=10){
         count++;
     }
-    if(a==0) cout<<1;
-    else cout<<count;//---> teacher's method
+    cout<<count;
+    // ----------------> My method 2 .....
+    // int count = 0;
+    // int a = n;
+    // while(n>0){
+    //     n/=10;
+    //     count++;
+    // }
+    // if(a==0) cout<<1;
+    // else cout<<count;//---> teacher's method
 }
