@@ -6,8 +6,7 @@ int main(){
     cin>>m;
     cout<<"Enter the no of columns : ";
     cin>>n;
-    if(m=n){
-        int arr1[m][n];
+    int arr1[m][n];
     int arr2[m][n];
     cout<<"Enter element of Array 1 : \n";
     for(int i=0;i<m;i++){
@@ -40,8 +39,5 @@ int main(){
         }
         cout<<endl;
     }
-    }
-    else cout<<"Invalid";
-
     
 }
